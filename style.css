@@ -1,0 +1,156 @@
+
+body{
+    background-color: #1C1C1C;
+    font-family: 'Inter', sans-serif;
+}
+.parent{
+    background-color: #1F2937;
+    width: 930px;
+    height: 600px;
+    margin: 40px auto;
+    border-radius: 10px;
+    transition:0.4s;
+}
+.contianer{
+    width: 800px;
+    height: 550px;
+    margin:auto;
+    padding-top: 60px;
+}
+.switch-mode{
+    position:absolute;
+    right: 340px;
+    top: 50px;
+    display: flex;
+}
+.contianer .switch-mode p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #4ADF86;
+}
+#switch[type=checkbox]{
+    height: 0px;
+    width: 0px;
+    visibility:hidden;
+}
+.switch-mode label{
+    height: 30px;
+    width: 60px;
+    border-radius: 100px;
+    background-color: #0f0f28;
+    display:block;
+    position:relative;
+    top: 17px;
+    right: 60px;
+}
+.switch-mode label::after{
+    content:" ";
+    height:26px;
+    width: 25px;
+    position:absolute;
+    border-radius: 100px;
+    background-color: white;
+    top: 2px;
+    right: 30px;
+    transition: 0.4s;
+}
+#switch:checked + label{
+    background-color: white;
+}
+#switch:checked + label::after{
+    background-color: #1b1b2f;
+    transform:translateX(110%);
+}
+.check{
+    position:absolute;
+    right: 0px;
+}
+#switch[type=checkbox]:checked ~ .check{
+    background-color: white;
+}
+.switch-mode label:active:after{
+    width:30px;
+}
+.text , .preferances{
+    margin-bottom: -50px;
+
+}
+.preferances{
+    position: relative;
+    left: 680px;
+    top: -165px;
+}
+.preferances label{
+    display: block;
+    color: #4ADF86;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.preferances input{
+    opacity: 0;
+    position: absolute;
+    right: 810px;
+    top: -30px;
+    width: 20px;
+    height: 20px;
+}
+.checkmark{
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    transform: translate(-30px,3px);
+    width: 16px;
+    height: 16px;
+    background-color: #273549;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.preferances input:checked ~ .checkmark{
+    background-color: #4ADF86;
+}
+.passwords{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#result-one, #result-two{
+    background-color: #273549;
+    color: #4ADF86;
+    text-align: center;
+    width: 145px;
+    height: 35px;
+    margin-top: 40px;
+    border-radius: 8px;
+    margin-left: 89px;
+    margin-right: 90px;
+    padding-top: 10px;
+}
+.contianer h1{
+    font-size: 40px;
+    font-weight: 800;
+    color:white;
+    letter-spacing: 2px;
+}
+.contianer h1 span{
+    color: #4ADF86;
+}
+.contianer p{
+    color: #D5D4D8;
+}
+button{
+    padding: 10px 30px;
+    margin-top: 40px;
+    margin-bottom:25px;
+    background-color:#4ADF86;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border:none;
+    border-radius: 8px;
+}
+hr{
+    background-color: #273549;
+    height: 2px;
+    border:none;
+}
+
